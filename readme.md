@@ -54,3 +54,9 @@ e não mais no Server.
 
 Dessa forma, o Client faz uma request mandando um application/json ou nada. Enquanto isso, o server, faz uma request pedindo
 uma presigner Url e devolve essa url para o client inserir os dados.
+
+---
+
+### Por fim, temos uma forma de deixar o conteúdo do bucket publico para ser acessado.
+
+Dentro do arquivo temos dois arquivos de JS. Um sobre o PutObjectCommand, onde vemos anteriormente que conseguimos gerar uma url e inserir o arquivo no bucket, mas agora, para disponibilizar, temos o GetObjectCommand, onde disponibilizamos o conteúdo para a internet de forma simples e por uma quantidade x de tempo.
