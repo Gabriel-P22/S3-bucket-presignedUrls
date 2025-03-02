@@ -8,9 +8,9 @@ Essa biblioteca nos ajuda a manipular o multipart para ser enviado nas requests 
 
 ---
 
-### O que é uma Presigned URL?
+### O que é uma Presigner URL?
 
-Uma **Presigned URL** é uma URL temporária que permite a inserção de dados no bucket do S3. Essa URL é gerada pelo próprio bucket.
+Uma **Presigner URL** é uma URL temporária que permite a inserção de dados no bucket do S3. Essa URL é gerada pelo próprio bucket.
 
 ---
 
@@ -19,7 +19,7 @@ Uma **Presigned URL** é uma URL temporária que permite a inserção de dados n
 Vamos ter duas pastas:
 
 1. **Convencional**
-2. **Presigned URLs**
+2. **Presigner URLs**
 
 ---
 
@@ -43,14 +43,14 @@ No modelo convencional, quem envia o arquivo é o servidor:
 ## Client - multipart/form-data-> Server -> S3 (Bucket)
 
 
-O server faz as validações e salva no S3. Porém, no modelo das Urls presigned-urls, o upload acontece no client
+O server faz as validações e salva no S3. Porém, no modelo das Urls presigner-urls, o upload acontece no client
 e não mais no Server.
 
 ---
 
-**Presigned Urls:**
+**Presigner Urls:**
 
-## Client - /upload --- application/json -> Server - Presigned Url -> S3 (Bucket)
+## Client - /upload --- application/json -> Server - Presigner Url -> S3 (Bucket)
 
 Dessa forma, o Client faz uma request mandando um application/json ou nada. Enquanto isso, o server, faz uma request pedindo
-uma presigned Url e devolve essa url para o client inserir os dados.
+uma presigner Url e devolve essa url para o client inserir os dados.
