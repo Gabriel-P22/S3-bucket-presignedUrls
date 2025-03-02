@@ -4,7 +4,5 @@
   "main": "index.js",
   "license": "MIT",
   "type": "module",
-  "dependencies": {
-    "lambda-multipart-parser": "^1.0.1"
-  }
+  "dependencies": {}
 }
